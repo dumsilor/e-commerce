@@ -3,16 +3,16 @@ export class Item {
     name: string;
     price: number;
     description: string;
-    image: string;
     category: string;
-    quantity: number;
-    constructor(id: number, name: string, price: number, description: string, image: string, category: string, quantity: number) {
+    stock: number;
+    imageUrl: string;
+    constructor(id: number, name: string, price: number, description: string, category: string, stock: number, imageUrl: string) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.description = description;
-        this.image = image;
-        this.quantity = quantity;
+        this.stock = stock;
         this.category = category;
+        this.imageUrl = imageUrl;
     }
 }

@@ -1,0 +1,9 @@
+<div class="container" *ngFor="let item of allItems">
+    <app-card
+    [itemCategory]="item.category"
+    [itemDescription]="item.description"
+    [itemName]="item.name"
+    [itemPrice]="item.price"
+    [itemStock]="item.stock"
+    ></app-card>
+</div>
